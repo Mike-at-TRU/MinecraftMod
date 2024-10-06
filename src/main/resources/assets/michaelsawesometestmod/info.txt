@@ -1,0 +1,7 @@
+The name of the folder this is in should match mod ID
+
+The dot needs to be Mod ID
+
+item textutures need to be 16 by 16 and proper pngs
+
+name of items/blocks of json files should be same name that we registered

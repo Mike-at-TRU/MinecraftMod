@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "michaelsawesometestmod:block/bismuth_ore"
+    "all": "michaelsawesometestmod:block/bismuth_deepslate_ore"
   }
 }
 

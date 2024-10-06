@@ -1,5 +1,12 @@
 {
-  "itemGroup.examplemod": "Example Mod Tab",
-  "block.examplemod.example_block": "Example Block",
-  "item.examplemod.example_item": "Example Item"
+  "item.michaelsawesometestmod.chisel": "Chisel",
+  "item.michaelsawesometestmod.bismuth": "Bismuth",
+  "item.michaelsawesometestmod.raw_bismuth": "Raw Bismuth",
+  "block.michaelsawesometestmod.bismuth_block": "Block of Bismuth",
+  "block.michaelsawesometestmod.bismuth_ore": "Bismuth Ore",
+  "block.michaelsawesometestmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
+  "block.michaelsawesometestmod.magic_block": "Magic Block",
+  "creativetab.michaelsawesometestmod.bismuth_items": "Bismuth Items",
+  "creativetab.michaelsawesometestmod.bismuth_blocks": "Bismuth Blocks"
 }
+

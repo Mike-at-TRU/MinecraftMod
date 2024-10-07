@@ -2,6 +2,7 @@ package net.mclebrun.minecraftmod.item;
 
 import net.mclebrun.minecraftmod.MinecraftMod;
 import net.mclebrun.minecraftmod.item.custom.ChiselItem;
+import net.mclebrun.minecraftmod.item.custom.FuelItem;
 import net.mclebrun.minecraftmod.item.custom.ModFoodProperties;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -20,6 +21,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> RADISH = ITEMS.register("radish",
             () -> new Item(new Item.Properties().food(ModFoodProperties.RADISH)));
+    public static final DeferredItem<Item> FROSTFIRE_ICE = ITEMS.register("frostfire_ice",
+            () -> new FuelItem(new Item.Properties(), 800));
 
 
     public static void register(IEventBus eventBus) {

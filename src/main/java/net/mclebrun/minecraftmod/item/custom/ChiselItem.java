@@ -1,6 +1,5 @@
 package net.mclebrun.minecraftmod.item.custom;
 
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -15,7 +14,7 @@ import net.minecraft.world.level.block.Blocks;
 import java.util.Map;
 import java.util.Objects;
 
-public class Chiseltem extends Item {
+public class ChiselItem extends Item {
     private static final Map<Block, Block> CHISEL_MAP =
             Map.of(
                     Blocks.STONE, Blocks.STONE_BRICKS,
@@ -27,7 +26,7 @@ public class Chiseltem extends Item {
 
     private boolean didWork = false;
 
-    public Chiseltem(Properties properties) {
+    public ChiselItem(Properties properties) {
         super(properties);
     }
 

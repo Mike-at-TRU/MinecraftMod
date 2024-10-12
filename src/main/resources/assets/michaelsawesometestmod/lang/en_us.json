@@ -10,6 +10,10 @@
   "block.michaelsawesometestmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
   "block.michaelsawesometestmod.magic_block": "Magic Block",
   "creativetab.michaelsawesometestmod.bismuth_items": "Bismuth Items",
-  "creativetab.michaelsawesometestmod.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.michaelsawesometestmod.bismuth_blocks": "Bismuth Blocks",
+  "tooltip.michaelsamazingminecraftmod.magic_block.tooltip": "A very §7magical §rblock",
+  "tooltip.michaelsamazingminecraftmod.chisel.shift_down": "Right click to turn blocks into the brick counterpart or back",
+  "tooltip.michaelsamazingminecraftmod.chisel": "Press §eShift§r for more info",
+  "tooltip.michaelsamazingtestmod.radish.tooltip": "Rad ish"
 }
 

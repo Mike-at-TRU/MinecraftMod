@@ -2,7 +2,6 @@ package net.mclebrun.minecraftmod.item;
 
 import net.mclebrun.minecraftmod.MinecraftMod;
 import net.mclebrun.minecraftmod.block.ModBlocks;
-import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -42,6 +41,20 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_ORE);
                         output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
                         output.accept(ModBlocks.MAGIC_BLOCK);
+                        output.accept(ModBlocks.BISMUTH_BUTTON);
+
+                        output.accept(ModBlocks.BISMUTH_DOOR);
+
+                        output.accept(ModBlocks.BISMUTH_TRAP_DOOR);
+
+                        output.accept(ModBlocks.BISMUTH_FENCE);
+                        output.accept(ModBlocks.BISMUTH_FENCE_GATE);
+                        output.accept(ModBlocks.BISMUTH_PRESSURE_PLATE);
+                        output.accept(ModBlocks.BISMUTH_STAIRS);
+
+                        output.accept(ModBlocks.BISMUTH_WALL);
+
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

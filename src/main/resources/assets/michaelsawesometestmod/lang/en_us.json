@@ -9,6 +9,13 @@
   "block.michaelsawesometestmod.bismuth_ore": "Bismuth Ore",
   "block.michaelsawesometestmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
   "block.michaelsawesometestmod.magic_block": "Magic Block",
+  "block.michaelsawesometestmod.bismuth_button": "Bismuth button",
+  "block.michaelsawesometestmod.bismuth_door": "Bismuth Door",
+  "block.michaelsawesometestmod.bismuth_trap_door": "Bismuth Trap Door",
+  "block.michaelsawesometestmod.bismuth_fence": "Bismuth Fence",
+  "block.michaelsawesometestmod.bismuth_fence_gate": "Bismuth Fence Gate",
+  "block.michaelsawesometestmod.bismuth_pressure_plate": "Bismuth Pressure Plate",
+  "block.michaelsawesometestmod.bismuth_wall": " Bismuth Wall",
   "creativetab.michaelsawesometestmod.bismuth_items": "Bismuth Items",
   "creativetab.michaelsawesometestmod.bismuth_blocks": "Bismuth Blocks",
   "tooltip.michaelsamazingminecraftmod.magic_block.tooltip": "A very §7magical §rblock",
@@ -16,4 +23,3 @@
   "tooltip.michaelsamazingminecraftmod.chisel": "Press §eShift§r for more info",
   "tooltip.michaelsamazingtestmod.radish.tooltip": "Rad ish"
 }
-

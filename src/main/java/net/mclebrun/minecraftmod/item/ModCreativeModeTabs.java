@@ -53,6 +53,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_STAIRS);
 
                         output.accept(ModBlocks.BISMUTH_WALL);
+                        output.accept(ModBlocks.BISMUTH_LAMP);
 
 
                     }).build());

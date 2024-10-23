@@ -2,8 +2,11 @@ package net.mclebrun.minecraftmod.datagen;
 
 import net.mclebrun.minecraftmod.MinecraftMod;
 import net.mclebrun.minecraftmod.block.ModBlocks;
+import net.mclebrun.minecraftmod.block.custom.BismuthLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -39,6 +42,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.BISMUTH_FENCE);
         blockItem(ModBlocks.BISMUTH_FENCE_GATE);
         blockItem(ModBlocks.BISMUTH_TRAP_DOOR, "_bottom");
+        customOnOffBlock(ModBlocks.BISMUTH_LAMP);
 
 
     }
@@ -53,5 +57,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockItem(DeferredBlock<?> deferredBlock, String appendix) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("michaelsawesometestmod:block/" + deferredBlock.getId().getPath() + appendix));
+    }
+
+    private void customOnOffBlock(DeferredBlock<?> block) {
+        String appendexOne = "_on";
+        String appendexTwo = "_off";
+        getVariantBuilder(block.get()).forAllStates(state -> {
+            if (state.getValue(BismuthLampBlock.IS_ON)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(block.getId().getPath() + appendexOne,
+                        ResourceLocation.fromNamespaceAndPath(MinecraftMod.MOD_ID, "block/" + block.getId().getPath() + appendexOne)))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll(block.getId().getPath() + appendexTwo,
+                        ResourceLocation.fromNamespaceAndPath(MinecraftMod.MOD_ID, "block/" + block.getId().getPath() + appendexTwo)))};
+            }
+
+        });
+        simpleBlockItem(block.get(), models().cubeAll(block.getId().getPath() + appendexOne,
+                ResourceLocation.fromNamespaceAndPath(MinecraftMod.MOD_ID, "block/" + block.getId().getPath() + appendexOne))
+
+        );
     }
 }

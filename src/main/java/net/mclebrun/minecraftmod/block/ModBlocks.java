@@ -1,6 +1,7 @@
 package net.mclebrun.minecraftmod.block;
 
 import net.mclebrun.minecraftmod.MinecraftMod;
+import net.mclebrun.minecraftmod.block.custom.BismuthLampBlock;
 import net.mclebrun.minecraftmod.block.custom.MagicBlock;
 import net.mclebrun.minecraftmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -70,7 +71,9 @@ public class ModBlocks {
     public static final DeferredBlock<TrapDoorBlock> BISMUTH_TRAP_DOOR = registerBlock("bismuth_trap_door",
             () -> new TrapDoorBlock(BlockSetType.IRON,
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
-
+    public static final DeferredBlock<Block> BISMUTH_LAMP = registerBlock("bismuth_lamp",
+            () -> new BismuthLampBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(BismuthLampBlock.IS_ON) ? 10 : 0)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

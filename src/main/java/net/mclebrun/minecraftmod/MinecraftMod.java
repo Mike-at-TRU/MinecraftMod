@@ -1,6 +1,7 @@
 package net.mclebrun.minecraftmod;
 
 import net.mclebrun.minecraftmod.block.ModBlocks;
+import net.mclebrun.minecraftmod.component.ModDataComponents;
 import net.mclebrun.minecraftmod.item.ModCreativeModeTabs;
 import net.mclebrun.minecraftmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -49,8 +50,11 @@ public class MinecraftMod //shift f6 to change all like f2 in vs code
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModDataComponents.register(modEventBus);
+        
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

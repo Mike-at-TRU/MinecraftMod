@@ -9,6 +9,8 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.common.data.internal.NeoForgeFluidTagsProvider;
+import net.neoforged.neoforge.common.data.internal.NeoForgeItemTagsProvider;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -31,4 +33,5 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.COMPASS);
 
     }
+
 }

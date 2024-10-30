@@ -6,6 +6,7 @@ import net.mclebrun.minecraftmod.item.ModCreativeModeTabs;
 import net.mclebrun.minecraftmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.neoforged.neoforge.common.Tags;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -51,7 +52,7 @@ public class MinecraftMod //shift f6 to change all like f2 in vs code
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModDataComponents.register(modEventBus);
-        
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 

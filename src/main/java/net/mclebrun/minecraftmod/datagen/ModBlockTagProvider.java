@@ -5,8 +5,12 @@ import net.mclebrun.minecraftmod.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.common.data.internal.NeoForgeBlockTagsProvider;
+import net.neoforged.neoforge.registries.datamaps.builtin.NeoForgeDataMaps;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -29,9 +33,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BISMUTH_BLOCK.get())
-                .add(ModBlocks.MAGIC_BLOCK.get())
-                .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
-                .add(ModBlocks.BISMUTH_ORE.get());
+                .add(ModBlocks.BISMUTH_ORE.get())
+                .add(ModBlocks.MAGIC_BLOCK.get());
+
 
         tag(BlockTags.FENCES)
                 .add(ModBlocks.BISMUTH_FENCE.get());
@@ -40,5 +44,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.WALLS)
                 .add(ModBlocks.BISMUTH_WALL.get());
 
+        tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
+                .replace(false);
+
     }
+
 }

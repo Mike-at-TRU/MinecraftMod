@@ -37,7 +37,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BISMUTH.get(), 18)
                 .requires(ModBlocks.MAGIC_BLOCK)
                 .unlockedBy("has_magic_block", has(ModBlocks.MAGIC_BLOCK))
-                .save(recipeOutput, "tutorialmod:bismuth_from_magic_block");
+                .save(recipeOutput, "michaelsawesometestmod:bismuth_from_magic_block");
 
         stairBuilder(ModBlocks.BISMUTH_STAIRS.get(), Ingredient.of(ModItems.BISMUTH)).group("bismuth")
                 .unlockedBy("has_bismuth", has(ModItems.BISMUTH)).save(recipeOutput);

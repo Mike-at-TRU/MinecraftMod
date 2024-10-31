@@ -93,6 +93,7 @@ public class MinecraftMod //shift f6 to change all like f2 in vs code
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            LOGGER.debug("testing testing 1 2 3 " + Tags.Blocks.NEEDS_NETHERITE_TOOL);
         }
     }
 }

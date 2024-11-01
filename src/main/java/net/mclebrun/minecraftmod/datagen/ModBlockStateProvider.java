@@ -5,6 +5,7 @@ import net.mclebrun.minecraftmod.block.ModBlocks;
 import net.mclebrun.minecraftmod.block.custom.BismuthLampBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.FenceBlock;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -39,7 +40,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.BISMUTH_STAIRS);
         blockItem(ModBlocks.BISMUTH_SLAB);
         blockItem(ModBlocks.BISMUTH_PRESSURE_PLATE);
-        blockItem(ModBlocks.BISMUTH_FENCE);
         blockItem(ModBlocks.BISMUTH_FENCE_GATE);
         blockItem(ModBlocks.BISMUTH_TRAP_DOOR, "_bottom");
         customOnOffBlock(ModBlocks.BISMUTH_LAMP);
@@ -50,6 +50,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
+
 
     private void blockItem(DeferredBlock<?> deferredBlock) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("michaelsawesometestmod:block/" + deferredBlock.getId().getPath()));

@@ -4,6 +4,7 @@ import net.mclebrun.minecraftmod.block.ModBlocks;
 import net.mclebrun.minecraftmod.component.ModDataComponents;
 import net.mclebrun.minecraftmod.item.ModCreativeModeTabs;
 import net.mclebrun.minecraftmod.item.ModItems;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.neoforge.common.Tags;
@@ -40,6 +41,7 @@ public class MinecraftMod //shift f6 to change all like f2 in vs code
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        //TODO look at how neoforge registers tags and diagnose where json is read
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
@@ -83,6 +85,10 @@ public class MinecraftMod //shift f6 to change all like f2 in vs code
     public void onServerStarting(ServerStartingEvent event) {
 
         LOGGER.info("Welcome To My Mod");
+
+        LOGGER.debug("testing testing Netherite " + ModBlocks.BISMUTH_BLOCK.is(Tags.Blocks.NEEDS_NETHERITE_TOOL));
+
+        LOGGER.debug("testing testing Iron " + ModBlocks.BISMUTH_BLOCK.is(BlockTags.NEEDS_IRON_TOOL));
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -93,7 +99,9 @@ public class MinecraftMod //shift f6 to change all like f2 in vs code
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-            LOGGER.debug("testing testing 1 2 3 " + Tags.Blocks.NEEDS_NETHERITE_TOOL);
+            LOGGER.debug("testing testing Netherite " + ModBlocks.BISMUTH_BLOCK.is(Tags.Blocks.NEEDS_NETHERITE_TOOL));
+
+            LOGGER.debug("testing testing Iron " + ModBlocks.BISMUTH_BLOCK.is(BlockTags.NEEDS_IRON_TOOL));
         }
     }
 }

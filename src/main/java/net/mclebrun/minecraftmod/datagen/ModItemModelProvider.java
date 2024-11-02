@@ -8,10 +8,12 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Objects;
@@ -38,6 +40,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModBlocks.BISMUTH_DOOR.asItem()); //it took me way to long to realize that the problem was that the png was in block not item
 
+        handheldItem(ModItems.BISMUTH_AXE);
+        handheldItem(ModItems.BISMUTH_HOE);
+        handheldItem(ModItems.BISMUTH_PICKAXE);
+        handheldItem(ModItems.BISMUTH_SHOVEL);
+        handheldItem(ModItems.BISMUTH_SWORD);
 
     }
     //TODO things
@@ -58,5 +65,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall", ResourceLocation.fromNamespaceAndPath(MinecraftMod.MOD_ID,
                         "block/" + baseBlock.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(MinecraftMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 }

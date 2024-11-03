@@ -1,10 +1,7 @@
 package net.mclebrun.minecraftmod.item;
 
 import net.mclebrun.minecraftmod.MinecraftMod;
-import net.mclebrun.minecraftmod.item.custom.ChiselItem;
-import net.mclebrun.minecraftmod.item.custom.FuelItem;
-import net.mclebrun.minecraftmod.item.custom.HammerItem;
-import net.mclebrun.minecraftmod.item.custom.ModFoodProperties;
+import net.mclebrun.minecraftmod.item.custom.*;
 import net.mclebrun.minecraftmod.util.ModTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
@@ -58,7 +55,7 @@ public class ModItems {
             () -> new HammerItem(ModToolTiers.BISMUTH, ModTags.Blocks.MINEABLE_WITH_HAMMER, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.BISMUTH, 7F, -3.5f)), 1));
     public static final DeferredItem<ArmorItem> BISMUTH_HELMET = ITEMS.register("bismuth_helmet",
-            () -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
     public static final DeferredItem<ArmorItem> BISMUTH_CHESTPLATE = ITEMS.register("bismuth_chestplate",
             () -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,

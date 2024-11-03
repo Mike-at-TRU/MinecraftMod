@@ -77,6 +77,17 @@ public class MinecraftMod //shift f6 to change all like f2 in vs code
             event.accept(ModBlocks.BISMUTH_BLOCK);
             event.accept(ModBlocks.BISMUTH_ORE);
         }
+
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.BISMUTH_SWORD);
+            event.accept(ModItems.BISMUTH_AXE);
+            event.accept(ModItems.BISMUTH_HELMET);
+            event.accept(ModItems.BISMUTH_CHESTPLATE);
+            event.accept(ModItems.BISMUTH_LEGGINGS);
+            event.accept(ModItems.BISMUTH_BOOTS);
+
+
+        }
     }
 
 
@@ -85,10 +96,6 @@ public class MinecraftMod //shift f6 to change all like f2 in vs code
     public void onServerStarting(ServerStartingEvent event) {
 
         LOGGER.info("Welcome To My Mod");
-
-        LOGGER.debug("testing testing Netherite " + ModBlocks.BISMUTH_BLOCK.is(Tags.Blocks.NEEDS_NETHERITE_TOOL));
-
-        LOGGER.debug("testing testing Iron " + ModBlocks.BISMUTH_BLOCK.is(BlockTags.NEEDS_IRON_TOOL));
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -99,9 +106,6 @@ public class MinecraftMod //shift f6 to change all like f2 in vs code
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-            LOGGER.debug("testing testing Netherite " + ModBlocks.BISMUTH_BLOCK.is(Tags.Blocks.NEEDS_NETHERITE_TOOL));
-
-            LOGGER.debug("testing testing Iron " + ModBlocks.BISMUTH_BLOCK.is(BlockTags.NEEDS_IRON_TOOL));
         }
     }
 }

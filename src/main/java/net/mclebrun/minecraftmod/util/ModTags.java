@@ -16,6 +16,8 @@ public class ModTags {
         public static TagKey<Block> NEEDS_BISMUTH_TOOL = createTag("needs_bismuth_tool");
         public static TagKey<Block> INCORRECT_FOR_BISMUTH_TOOL = createTag("incorrect_for_bismuth_tool");
 
+        public static TagKey<Block> MINEABLE_WITH_HAMMER = createTag("mineable_with_hammer");
+
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(MinecraftMod.MOD_ID, name));
         }

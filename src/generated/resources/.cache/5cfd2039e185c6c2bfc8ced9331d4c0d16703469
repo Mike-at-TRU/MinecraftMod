@@ -1,5 +1,6 @@
-// 1.21.1	2024-11-01T17:24:34.8325152	Tags for minecraft:block mod id michaelsawesometestmod
+// 1.21.1	2024-11-02T20:30:53.0968429	Tags for minecraft:block mod id michaelsawesometestmod
 dab6e46a1d4c5c185183b769e075a08d1503c81f data/michaelsawesometestmod/tags/block/incorrect_for_bismuth_tool.json
+c2f6fb7224bd1e2fdb87249751113c4d66dbc21f data/michaelsawesometestmod/tags/block/mineable_with_hammer.json
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data/michaelsawesometestmod/tags/block/needs_bismuth_tool.json
 d08fc52e6259d8ede7f3d4cddd606a0abf3c282a data/minecraft/tags/block/fences.json
 d583fa1d271cf0eaf230a9c2541758ed6365eb79 data/minecraft/tags/block/fence_gates.json

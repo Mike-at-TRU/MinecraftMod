@@ -45,6 +45,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.BISMUTH_PICKAXE);
         handheldItem(ModItems.BISMUTH_SHOVEL);
         handheldItem(ModItems.BISMUTH_SWORD);
+        handheldItem(ModItems.BISMUTH_HAMMER);
 
     }
     //TODO things

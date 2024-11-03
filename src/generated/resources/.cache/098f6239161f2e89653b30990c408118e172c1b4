@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-02T22:41:36.9601637	Item Models: michaelsawesometestmod
+// 1.21.1	2024-11-02T23:14:46.6861191	Item Models: michaelsawesometestmod
 5511a7ffb22d575968f6a61f25c5dde21b5c164b assets/michaelsawesometestmod/models/item/bismuth.json
 dd4670ee3fb7389b4d2803390c9b35d035d263f7 assets/michaelsawesometestmod/models/item/bismuth_axe.json
 6dd7989f1d1bb1cd64d8c80731345fe121c7f602 assets/michaelsawesometestmod/models/item/bismuth_boots.json
@@ -39,6 +39,7 @@ faddc11cc18453afacb8e09005769b5f6bb24aab assets/michaelsawesometestmod/models/it
 c37b85f5ca1b009dc7a0b9c715d38e638f6355c5 assets/michaelsawesometestmod/models/item/bismuth_helmet_quartz_trim.json
 501390c5a54f8d42e23d93cb00ad1bfda7ebc22d assets/michaelsawesometestmod/models/item/bismuth_helmet_redstone_trim.json
 0d38d4591a320ffbb6f70eee0afe1b6b9923b4df assets/michaelsawesometestmod/models/item/bismuth_hoe.json
+5fb5bc2878d76ab3645d928183a5c7e2200a666c assets/michaelsawesometestmod/models/item/bismuth_horse_armor.json
 4e91576f4b4bb86b74c5e2e421d5388d16079bd6 assets/michaelsawesometestmod/models/item/bismuth_leggings.json
 7b5ed5aa8cc29a84c845e047a15628563903afaf assets/michaelsawesometestmod/models/item/bismuth_leggings_amethyst_trim.json
 1ccba4c47273b2e2129f33eb4926f3d0f8575453 assets/michaelsawesometestmod/models/item/bismuth_leggings_copper_trim.json

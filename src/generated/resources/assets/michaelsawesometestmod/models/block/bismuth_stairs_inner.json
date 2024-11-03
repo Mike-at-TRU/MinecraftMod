@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "michaelsawesometestmod:block/bismuth_block",
+    "side": "michaelsawesometestmod:block/bismuth_block",
+    "top": "michaelsawesometestmod:block/bismuth_block"
+  }
+}

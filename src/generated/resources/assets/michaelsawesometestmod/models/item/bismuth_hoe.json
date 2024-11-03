@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "michaelsawesometestmod:item/bismuth_hoe"
+  }
+}

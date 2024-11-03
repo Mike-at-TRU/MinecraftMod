@@ -1,0 +1,10 @@
+{
+  "values": {
+    "michaelsawesometestmod:frostfire_ice": {
+      "burn_time": 1200
+    },
+    "michaelsawesometestmod:starlight_ashes": {
+      "burn_time": 1200
+    }
+  }
+}

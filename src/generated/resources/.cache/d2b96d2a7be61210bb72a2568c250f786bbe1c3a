@@ -1,0 +1,7 @@
+// 1.21.1	2024-11-01T17:24:34.8325152	Tags for minecraft:item mod id michaelsawesometestmod
+bd6cb58876acc8ebd8bb07922a376270b97d9312 data/michaelsawesometestmod/tags/item/transformable_items.json
+5dc868d0cb9f23edebbf27b8681103adec34612b data/minecraft/tags/item/axes.json
+6a4813127d220ad395e7ad494bfea42c694a4ff2 data/minecraft/tags/item/hoes.json
+c59c53c4daa85bf70f2fdfbd64d53b869629cdab data/minecraft/tags/item/pickaxes.json
+06094416b2c3133d3426dbb77bb5a99dc85df8b5 data/minecraft/tags/item/shovels.json
+8b7caff12a65c0050d018f5631dd964e96447696 data/minecraft/tags/item/swords.json

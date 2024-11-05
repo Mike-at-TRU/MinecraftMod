@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-02T22:41:36.9621627	Tags for minecraft:item mod id michaelsawesometestmod
+// 1.21.1	2024-11-03T17:35:25.1109136	Tags for minecraft:item mod id michaelsawesometestmod
 bd6cb58876acc8ebd8bb07922a376270b97d9312 data/michaelsawesometestmod/tags/item/transformable_items.json
 5dc868d0cb9f23edebbf27b8681103adec34612b data/minecraft/tags/item/axes.json
 6a4813127d220ad395e7ad494bfea42c694a4ff2 data/minecraft/tags/item/hoes.json
@@ -6,3 +6,5 @@ c59c53c4daa85bf70f2fdfbd64d53b869629cdab data/minecraft/tags/item/pickaxes.json
 06094416b2c3133d3426dbb77bb5a99dc85df8b5 data/minecraft/tags/item/shovels.json
 8b7caff12a65c0050d018f5631dd964e96447696 data/minecraft/tags/item/swords.json
 40a339855081bf54c7c77f1c563bf74690d8fc95 data/minecraft/tags/item/trimmable_armor.json
+1f776077358ea13c633b29739806576f2594f8dc data/minecraft/tags/item/trim_materials.json
+b47cf30a4f4913b736a2b2662a134b962651ff18 data/minecraft/tags/item/trim_templates.json

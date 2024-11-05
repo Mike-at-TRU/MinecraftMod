@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-02T23:14:46.6861191	Item Models: michaelsawesometestmod
+// 1.21.1	2024-11-03T17:35:25.1089206	Item Models: michaelsawesometestmod
 5511a7ffb22d575968f6a61f25c5dde21b5c164b assets/michaelsawesometestmod/models/item/bismuth.json
 dd4670ee3fb7389b4d2803390c9b35d035d263f7 assets/michaelsawesometestmod/models/item/bismuth_axe.json
 6dd7989f1d1bb1cd64d8c80731345fe121c7f602 assets/michaelsawesometestmod/models/item/bismuth_boots.json
@@ -57,6 +57,7 @@ f8065f51c2e7f4876560403c3a885cfe7cd500ba assets/michaelsawesometestmod/models/it
 f830ce8cf9338503e2c17a438d2d5caaa36147f9 assets/michaelsawesometestmod/models/item/bismuth_wall.json
 555e7f5a8fef60504291ebb01589a5bff044a97c assets/michaelsawesometestmod/models/item/chisel.json
 b52be6ed84544b6bc8c33f953cdfda0bfc82752f assets/michaelsawesometestmod/models/item/frostfire_ice.json
+15f9282eaaa5a777a7d52f9ad0e3fc9126c7d6de assets/michaelsawesometestmod/models/item/michael_armor_trim_smithing_template.json
 8248555f3ce2fd702718189966d879b9c6799ded assets/michaelsawesometestmod/models/item/radish.json
 d85c6494dd8604a004b7ade191a2131fcf9b3c4b assets/michaelsawesometestmod/models/item/raw_bismuth.json
 0f41cb446632bc4b350b54202850d045812bedbe assets/michaelsawesometestmod/models/item/starlight_ashes.json

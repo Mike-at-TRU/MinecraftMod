@@ -4,6 +4,7 @@ import net.mclebrun.minecraftmod.MinecraftMod;
 import net.mclebrun.minecraftmod.item.custom.*;
 import net.mclebrun.minecraftmod.util.ModTags;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -69,6 +70,9 @@ public class ModItems {
     public static final DeferredItem<Item> BISMUTH_HORSE_ARMOR = ITEMS.register("bismuth_horse_armor",
             () -> new AnimalArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN, false,
                     new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> MICHAEL_SMITHING_TEMPLATE = ITEMS.register("michael_armor_trim_smithing_template",
+            () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(MinecraftMod.MOD_ID, "michael")));
 
 
     public static void register(IEventBus eventBus) {

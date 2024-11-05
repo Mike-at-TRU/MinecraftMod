@@ -16,6 +16,7 @@
   "item.michaelsawesometestmod.bismuth_leggings": "Bismuth Leggings",
   "item.michaelsawesometestmod.bismuth_horse_armor": "Bismuth Horse Armor",
   "item.michaelsawesometestmod.bismuth_boots": "Bismuth Boots",
+  "item.michaelsawesometestmod.michael_armor_trim_smithing_template": "Michael Smith Now",
   "block.michaelsawesometestmod.bismuth_block": "Block of Bismuth",
   "block.michaelsawesometestmod.bismuth_ore": "Bismuth Ore",
   "block.michaelsawesometestmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
@@ -33,5 +34,7 @@
   "tooltip.michaelsamazingminecraftmod.magic_block.tooltip": "A very §7magical §rblock",
   "tooltip.michaelsamazingminecraftmod.chisel.shift_down": "Right click to turn blocks into the brick counterpart or back",
   "tooltip.michaelsamazingminecraftmod.chisel": "Press §eShift§r for more info",
-  "tooltip.michaelsamazingtestmod.radish.tooltip": "Rad ish"
+  "tooltip.michaelsamazingtestmod.radish.tooltip": "Rad ish",
+  "trim_pattern.michaelsawesometestmod.michael": "Michael Armor Trim",
+  "trim_material.michaelsawesometestmod.bismuth": "Bismuth Material"
 }

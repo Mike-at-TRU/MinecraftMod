@@ -1,0 +1,8 @@
+{
+  "asset_id": "michaelsawesometestmod:michael",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.michaelsawesometestmod.michael"
+  },
+  "template_item": "michaelsawesometestmod:michael_armor_trim_smithing_template"
+}
